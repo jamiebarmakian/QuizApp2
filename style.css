@@ -1,0 +1,143 @@
+
+body {
+  background-image: url("Photos/campingbackground.jpg");
+}
+
+h1 {
+  text-align: center;
+  padding-top: 40px;
+  font-family: "Courier New", Courier, monospace;
+  color: #228B22;
+}
+
+button {
+  margin: auto;
+  background-color: white;
+  font-size: 15px;
+  border-radius: 12px;
+  padding: 7px;
+  border-color: teal;
+  text-align: center;
+  display: inline-block;
+  font-family: "Courier New", Courier, monospace;
+}
+
+form {
+  text-align: center;
+}
+
+input {
+  background-color: teal;
+}
+
+.question {
+  list-style: none;
+  display:inline;
+  float: left;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  background-color: whitesmoke;
+  margin-bottom: 15px;
+}
+
+.scoreText {
+  list-style: none;
+  display:inline;
+  float: right;
+  padding-right: 40px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  background-color: whitesmoke;
+  margin-bottom: 15px;
+}
+
+.quizStart {
+  display: flex;
+  position: relative;
+  background-color: whitesmoke;
+  flex-direction: column;
+  padding-top: 0px;
+  padding-bottom: 52px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+  @media only screen and (max-width: 600px) {
+  .quizStart {
+    display: flex;
+    position: relative;
+    background-color: whitesmoke;
+    flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 52px;
+    border-radius: 12px;
+    margin-top: 20px;
+  }
+
+  .answerImg {
+    width: 300px;
+    height: 200px;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+  }
+
+  .start-img {
+    width: 300px;
+    height: 200px;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+  }
+}
+
+.start-img {
+  display: block;
+  margin:20px
+}
+
+.nextButton {
+  display: flex;
+  flex-direction:column;
+  margin-top: 20px;
+}
+
+.finalButton {
+  margin-top: 20px; 
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+#lastDiv{
+  margin-bottom: 20px;
+}
+
+.quizStart {
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.answerPage {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 10px;
+  text-color: #228B22;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  border-radius: 12px;
+  padding-bottom: 40px;
+}
+
+input {
+  margin: auto;
+  background-color: white;
+  font-size: 15px;
+  border-radius: 12px;
+  padding: 7px;
+  border-color: teal;
+  text-align: center;
+  display: inline-block;
+  font-family: "Courier New", Courier, monospace;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <tabindex="0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>National Park Quiz App</title>
+    <meta name="description" content="Test your National Park knowledge.">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header id="question-score-header" style="display: none" role="banner">
+      <div class="">
+        <a href="index.html">
+        </a>
+      </div>
+       <div>
+        <ul>
+          <li class="question">Question: <span class="questionNumber">0</span class="questionCount">/10</li>
+          <li class="scoreText">Score: <span class="score">0</span></li>
+        </ul>
+      </div>
+    </header>
+    <main role="main">
+      <p style="clear: both;"></p>
+
+      <!-- start-page -->
+      <div style="margin-top: 20px;" class="quizStart" id="start-page">
+        <h1>How well do you know your National Parks?</h1>
+        <center><img src="Photos/start-page-img.jpg" width="400" height="300" alt="Rocky Mountain Natl Park" class="start-img"></center>
+        <button id="start-button" type="button" class="startButton">Find out!</button>
+      </div>
+
+      <!-- question-page -->
+      <div id="question-page" class="quizStart" style="display:none">
+        <h1 id="question-text"></h1>
+        <h3 id="question-page-message" style="text-align: center"></h3>
+        <form id="question-form" name="question-form" method="post" action="#">
+            <div>
+              <input name="answers" type="radio" id="answer-radio-1" value="0">
+              <label id="answer-label-1" for="answer-radio-1"></label>
+            </div>
+            <div>
+              <input name="answers" type="radio" id="answer-radio-2" value="1">
+              <label id="answer-label-2" for="answer-radio-2"></label>
+            </div>
+            <div>
+              <input name="answers" type="radio" id="answer-radio-3" value="2">
+              <label id="answer-label-3" for="answer-radio-3"></label>
+            </div>
+            <div id="lastDiv">
+              <input name="answers" type="radio" id="answer-radio-4" value="3">
+              <label id="answer-label-4" for="answer-radio-4"></label>
+            </div>
+            <input
+                id="nextBtn"
+                type="submit"
+                value="Next"
+                class="startButton"
+            />
+        </form>
+      </div>
+
+      <!-- answer-page -->
+      <div id="answer-page" style="display:none" class="answerPage">
+        <h1>...</h1>
+        <h2 id="answer-result-text"></h2>
+        <center><img id="answer-img" class="answerImg" src="Photos/Wrangell-St-Elias-Q2.jpg" width="400" height="300" alt="Wrangell-St. Elias Natl Park" ></center>
+        <button id="next-button" type="button" class="nextButton">Next</button>
+      </div>
+
+      <!--final-page-->
+      <div id="final-page" style="display:none" class="answerPage">
+        <h2 id="final-page-text"></h2>
+        <center><img id="final-img" class="answerImg" src="Photos/Final-image.jpg" width="400" height="300" alt="final image" ></center>
+        <button id="final-button" type="button" class="finalButton">Start Again!</button>
+      </div>
+    </main>
+  </body>
+</html>

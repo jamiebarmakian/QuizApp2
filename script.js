@@ -97,7 +97,7 @@ var mainController = {
 
     this.uiElements.finalButton.click(function(){
       that.uiElements.startPage.show();
-      that.uiElements.startPage.hide();
+      that.uiElements.finalPage.hide();
     })
     
     this.uiElements.questionForm.submit(function(e) {
